@@ -42,20 +42,18 @@ h1
  
  /*GRID*/
  
- .jag{ grid-area:020002,main; }
- .jag2{ grid-area:020002,header}
+ section{
+	 font-size: 20px;
+ }
+ section:first-child{ grid-area:s2; }
+ section:last-child{ grid-area:s1;}
  
- .grid-container{
+main{
 	 display: grid;
 	 grid-template-areas:
-	 'header header main main'
-	 grid-gap:2px;
+	 's2 s1'
+	 's2 s1';
+	 grid-gap:10px;
 	 background-color: black;
-	 padding: 5px;
+	 grid-template-rows:100px 100px;
  }
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
-}
