@@ -1,0 +1,61 @@
+p
+            {
+                color: blue;
+                font-family: sans-serif;
+                font-size: 130%;
+            }
+h1
+  {
+      color: green;
+      font-family: arial;
+      font-size: 22px;
+  }
+ h2
+  {
+      color: green;
+      font-family: sans-serif;
+      font-size:150%;
+  }
+  body
+   {
+       background-color: lightblue;
+   }
+.b
+{
+    background-color:lightgreen;
+    text-align: center;
+}
+.t
+ {
+    text-align:right; 
+    
+ }
+  a
+  {
+      text-decoration: none;
+  }
+ p.o {
+     border-style: dashed;
+     
+     
+ }
+ 
+ /*GRID*/
+ 
+ .jag{ grid-area:020002,main; }
+ .jag2{ grid-area:020002,header}
+ 
+ .grid-container{
+	 display: grid;
+	 grid-template-areas:
+	 'header header main main'
+	 grid-gap:2px;
+	 background-color: black;
+	 padding: 5px;
+ }
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
